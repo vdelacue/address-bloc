@@ -1,6 +1,8 @@
-def greeting(greet, name)
-    ARGV.each do |greetWord, nameWord|
-        puts "#{greetWord} #{nameWord}!"
+def greeting
+    greetword = ARGV.shift
+    ARGV.each do |nameWord|
+      puts "#{greetword} #{nameWord}!"
+
     end
 end
 
