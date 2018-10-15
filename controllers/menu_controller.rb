@@ -27,6 +27,10 @@ class MenuController
       system "clear"
       create_entry
       main_menu
+    when 3
+      system "clear"
+      search_entries
+      main_menu
     when 4
       system "clear"
       read_csv
@@ -96,5 +100,5 @@ class MenuController
         entry_submenu(entry)
     end
   end
-  
+
 end
