@@ -47,9 +47,26 @@ require "csv"
         elsif name > mid_name
           lower = mid + 1
         end
-        
+
       end
 
+      return nil
+    end
+
+    def iterative_search(name)
+      lower = 0
+      upper = entries.length - 1
+
+      while lower <= upper
+        new_lower_name = entries[lower].name
+        upper_name = entries[upper].name
+
+        if name == new_lower_name
+          return entries[lower]
+        else
+          lower += 1
+        end
+      end
       return nil
     end
 
