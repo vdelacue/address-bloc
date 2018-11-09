@@ -47,10 +47,15 @@ require "csv"
         elsif name > mid_name
           lower = mid + 1
         end
-        
+
       end
 
       return nil
+    end
+
+    def nuke_entries
+      @entries = []
+
     end
 
   end
